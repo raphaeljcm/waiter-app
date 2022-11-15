@@ -10,4 +10,4 @@ webpack/*.js
 .vs
 .gitlab-ci.yml
 *.md
-src/assets/images/*
+src/assets/*
