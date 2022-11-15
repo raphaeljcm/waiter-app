@@ -4,8 +4,6 @@ import path from 'node:path';
 
 import { router } from './router';
 
-const PORT = 3001;
-
 mongoose
   .connect('mongodb://localhost:27017')
   .then(() => {
@@ -21,8 +19,8 @@ mongoose
     app.use(express.json());
     app.use(router);
 
-    app.listen(PORT, () => {
-      console.log(`Server is running on http://localhost:${PORT}`);
+    app.listen(process.env.PORT, () => {
+      console.log(`Server is running on http://localhost:${process.env.PORT}`);
     });
   })
   .catch(() => console.log('Failed to connect to MongoDB'));
