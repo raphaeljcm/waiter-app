@@ -1,5 +1,6 @@
 import express from 'express';
 import mongoose from 'mongoose';
+
 import { router } from './router';
 
 const PORT = 3001;
