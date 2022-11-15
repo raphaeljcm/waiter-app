@@ -6,6 +6,7 @@
   "scripts": {
     "build": "tsc",
     "dev": "nodemon src/index.ts",
+    "start": "node dist",
     "prepare": "cd .. && husky install api/.husky"
   },
   "lint-staged": {
