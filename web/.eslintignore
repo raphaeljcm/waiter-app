@@ -5,3 +5,4 @@ dist
 webpack/*.js
 .webpack
 out
+src/assets
