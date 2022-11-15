@@ -1,5 +1,5 @@
 import { Request, Response } from 'express';
-import { z } from 'zod';
+import { ZodError, z } from 'zod';
 
 import { Order } from '../../models/Order';
 
@@ -18,10 +18,10 @@ export async function changeOrderStatus(req: Request, res: Response) {
     await Order.findByIdAndUpdate(orderId, { status });
 
     res.sendStatus(204);
-  } catch (error: any) {
+  } catch (error) {
     console.log(error);
 
-    if (error.issues) {
+    if (error instanceof ZodError && error.issues) {
       const code = error.issues[0].code;
 
       if (code === 'invalid_enum_value') {
