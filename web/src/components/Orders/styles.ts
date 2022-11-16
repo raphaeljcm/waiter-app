@@ -1,6 +1,6 @@
 import styled from 'styled-components';
 
-import { pxToRem } from '../../utils/styles';
+import { pxToRem } from '../../utils/pxToRem';
 
 export const Container = styled.div`
   width: 100%;
