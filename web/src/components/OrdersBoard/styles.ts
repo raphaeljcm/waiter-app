@@ -47,11 +47,25 @@ export const OrdersContainer = styled.div`
 
     span {
       font-size: ${pxToRem(14)};
-      color: #fff;
+      color: #666;
     }
 
     & + button {
       margin-top: 1.5rem;
     }
+  }
+`;
+
+export const EmptyOrders = styled.div`
+  height: 8rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #fff;
+  border: 1px solid rgba(204, 204, 204, 0.4);
+  border-radius: 8px;
+
+  strong {
+    font-weight: 500;
   }
 `;
