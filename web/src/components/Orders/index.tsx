@@ -4,27 +4,27 @@ import * as S from './styles';
 
 const orders: Order[] = [
   {
-    _id: '6372e48cbcd195b0d3d0f7f3',
-    table: '123',
+    _id: '6373ef0ab4afa344e65c11f6',
+    table: '1',
     status: 'WAITING',
     products: [
       {
         product: {
           name: 'Pizza quatro queijos',
-          imagePath: '1668472896991-quatro-queijos.png',
+          imagePath: '1668539581610-quatro-queijos.png',
           price: 40,
         },
         quantity: 3,
-        _id: '6372e48cbcd195b0d3d0f7f4',
+        _id: '6373ef0ab4afa344e65c11f7',
       },
       {
         product: {
           name: 'Coca cola',
-          imagePath: '1668473462705-coca-cola.png',
+          imagePath: '1668540990954-coca-cola.png',
           price: 7,
         },
-        quantity: 2,
-        _id: '6372e48cbcd195b0d3d0f7f5',
+        quantity: 1,
+        _id: '6373f204f676a35c912547f0',
       },
     ],
   },
